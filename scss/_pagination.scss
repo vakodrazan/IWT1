@@ -22,7 +22,6 @@
 }
 
 .navigation {
-    height: 300px;
     top: 10%;
     left: 0;
     position: fixed;
@@ -31,6 +30,24 @@
     transform: translateX(-110%);
     transition: transform 250ms ease-in-out;
     background-color: $white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+
+    &__list {
+        @include flex-row-layout();
+        flex-direction: column;
+        gap: 10px;
+
+        a {
+            font-weight: 500;
+            color: $dark-blue;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
 
     @media (min-width: $desktop_breakpoint) {
         height: unset;
@@ -44,7 +61,7 @@
         background-color: unset;
 
         &__list {
-            @include flex-row-layout();
+            flex-direction: row;
             gap: 25px;
         }
     }
