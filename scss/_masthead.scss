@@ -2,8 +2,13 @@
 
 .masthead {
     background-color: $very-light-gray;
-    background-image: url(../images/bg-intro-mobile.svg);
-    background-size: 95% 170%;
-    background-position: 900% 60%;
+    background-image: url(../images/image-mockups.png);
+    background-size: 100% 100%;
+    background-position-y: 20%;
     background-repeat: no-repeat;
+    margin-top: -2rem;
+
+    .container {
+        padding-top: 200px;
+    }
 }

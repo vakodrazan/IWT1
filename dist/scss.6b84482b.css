@@ -102,10 +102,14 @@ a {
 
 .masthead {
   background-color: #fafafa;
-  background-image: url(/bg-intro-mobile.2783d013.svg);
-  background-size: 95% 170%;
-  background-position: 900% 60%;
+  background-image: url(/image-mockups.82980908.png);
+  background-size: 100% 100%;
+  background-position-y: 20%;
   background-repeat: no-repeat;
+  margin-top: -2rem;
+}
+.masthead .container {
+  padding-top: 200px;
 }
 
 .menu {
