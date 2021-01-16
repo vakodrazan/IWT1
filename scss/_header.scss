@@ -1,11 +1,13 @@
 @import "./variables";
 
 .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     .container {
         @include flex-row-layout();
         background-color: $white;
     }
-
 
 
     &__request {
@@ -14,5 +16,9 @@
         @media (min-width: $desktop_breakpoint) {
             display: block;
         }
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 }

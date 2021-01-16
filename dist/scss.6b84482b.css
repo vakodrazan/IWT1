@@ -55,6 +55,11 @@ ul {
   border: none;
 }
 
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
 .container {
   --padding-left: 14px;
   --padding-right: 15px;
@@ -69,6 +74,10 @@ ul {
   }
 }
 
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .header .container {
   display: flex;
   flex-direction: row;
@@ -83,6 +92,9 @@ ul {
   .header__request {
     display: block;
   }
+}
+.header a:hover {
+  text-decoration: underline;
 }
 
 .menu {
