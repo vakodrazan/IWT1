@@ -50,6 +50,10 @@ ul {
 .request_button:hover {
   filter: contrast(135%);
 }
+.request_button:focus {
+  outline: none;
+  border: none;
+}
 
 .container {
   --padding-left: 14px;

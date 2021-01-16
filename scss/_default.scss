@@ -32,4 +32,8 @@ ul {
     &:hover {
         filter: contrast(135%);
     }
+    &:focus {
+        outline: none;
+        border: none;
+    }
 }
