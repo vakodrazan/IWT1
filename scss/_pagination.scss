@@ -31,6 +31,23 @@
     transform: translateX(-110%);
     transition: transform 250ms ease-in-out;
     background-color: $white;
+
+    @media (min-width: $desktop_breakpoint) {
+        height: unset;
+        top: unset;
+        left: unset;
+        position: unset;
+        width: unset;
+        margin-top: 0;
+        transform: unset;
+        transition: unset;
+        background-color: unset;
+
+        &__list {
+            @include flex-row-layout();
+            gap: 25px;
+        }
+    }
 }
 
 input[type="checkbox"]:checked ~ .navigation {

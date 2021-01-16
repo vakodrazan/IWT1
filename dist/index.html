@@ -8,32 +8,34 @@
     <script src="/scss.6b84482b.js"></script></head>
     <body>
         <header class="header">
-            <h1 class="header__heading">
-                <img src="/logo.236e4034.svg" alt="Easybank page">
-            </h1>
-            <input type="checkbox" name="openSidebarMenu" class="openSidebarMenu" id="openSidebarMenu">
-            <!-- <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu"> -->
-            <label for="openSidebarMenu" class="menu">Open menu</label>
-            <nav class="navigation">
-                <ul>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="#features-section">About</a>
-                    </li>
-                    <li>
-                        <a href="#articles-section">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#footer">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#footer">Careers</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="header__request">Request invite</button>
+            <div class="container">
+                <h1 class="header__heading">
+                    <img src="/logo.236e4034.svg" alt="Easybank page">
+                </h1>
+                <input type="checkbox" name="openSidebarMenu" class="openSidebarMenu" id="openSidebarMenu">
+                <!-- <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu"> -->
+                <label for="openSidebarMenu" class="menu">Open menu</label>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="#features-section">About</a>
+                        </li>
+                        <li>
+                            <a href="#articles-section">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#footer">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#footer">Careers</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="request_button header__request">Request invite</button>
+            </div>
         </header>
         <main>
             <header>
@@ -41,7 +43,7 @@
                 <p>
                     Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
                 </p>
-                <button>Request invite</button>
+                <button class="request_button">Request invite</button>
             </header>
             <article id="features-section">
                 <div>
@@ -148,7 +150,7 @@
                     </ul>
 
                     <div>
-                        <button>Request invite</button>
+                        <button class="request_button">Request invite</button>
                         <p>
                             <small>&copy;</small>
                             Easybank. All Rights Reserved

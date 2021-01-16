@@ -1,11 +1,18 @@
 @import "./variables";
 
 .header {
-    @include flex-row-layout();
+    .container {
+        @include flex-row-layout();
+        background-color: $white;
+    }
 
 
 
     &__request {
         display: none;
+
+        @media (min-width: $desktop_breakpoint) {
+            display: block;
+        }
     }
 }
