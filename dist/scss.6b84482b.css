@@ -21,6 +21,16 @@ body {
   font-size: 18px;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__request {
+  display: none;
+}
+
 .menu {
   background-image: url("/icon-hamburger.cb455b0f.svg");
   background-repeat: no-repeat;

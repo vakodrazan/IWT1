@@ -1,0 +1,11 @@
+@import "./variables";
+
+.header {
+    @include flex-row-layout();
+
+
+
+    &__request {
+        display: none;
+    }
+}
