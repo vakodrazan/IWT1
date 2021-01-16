@@ -1,0 +1,68 @@
+@import "./variables";
+
+.footer {
+    background-color: $dark-blue;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    fill: $white;
+
+    &__navigation {
+        @include flex-row-layout();
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+
+        &__logo {
+            padding-bottom: 10px;
+        }
+
+        @media (min-width: $desktop_breakpoint) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &__action {
+            @include flex-row-layout();
+            flex-direction: column;
+            gap: 10px;
+
+            @media (min-width: $desktop_breakpoint) {
+                align-items: flex-start;;
+            }
+
+            &__icon {
+                background-repeat: no-repeat;
+                width: 200px;
+                height: 25px;
+                text-indent: -999px;
+                overflow: hidden;
+            }
+
+            &--facebook {
+                background-image: url("../images/icon-facebook.svg");
+            }
+            &--youtube {
+                background-image: url("../images/icon-youtube.svg");
+            }
+            &--twitter {
+                background-image: url("../images/icon-twitter.svg");
+            }
+            &--pinterest {
+                background-image: url("../images/icon-pinterest.svg");
+            }
+            &--instagram {
+                background-image: url("../images/icon-instagram.svg");
+            }
+        }
+
+        &--social-media {
+            flex-direction: row;
+            width: 168px;
+            padding-top: 10px;
+        }
+    }
+}
