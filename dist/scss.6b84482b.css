@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Public Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Public Sans"), local("Public Sans-700"), url("/public-sans-700.afb17758.woff2") format(woff2), url("/public-sans-700.2877d620.woff") format(woff);
+}
+@font-face {
+  font-family: "Public Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Public Sans"), local("Public Sans-400"), url("/public-sans-400.06d0b593.woff2") format(woff2), url("/public-sans-400.fedff526.woff") format(woff);
+}
+@font-face {
+  font-family: "Public Sans";
+  font-weight: 300;
+  font-style: normal;
+  src: local("Public Sans"), local("Public Sans-300"), url("/public-sans-300.8d817ddc.woff2") format(woff2), url("/public-sans-300.5cd4bd66.woff") format(woff);
+}
+body {
+  font-family: "Public Sans", Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=/scss.6b84482b.css.map */
