@@ -100,6 +100,14 @@ a {
   text-decoration: underline;
 }
 
+.masthead {
+  background-color: #fafafa;
+  background-image: url(/bg-intro-mobile.2783d013.svg);
+  background-size: 95% 170%;
+  background-position: 900% 60%;
+  background-repeat: no-repeat;
+}
+
 .menu {
   background-image: url("/icon-hamburger.cb455b0f.svg");
   background-repeat: no-repeat;

@@ -1,0 +1,9 @@
+@import "./variables";
+
+.masthead {
+    background-color: $very-light-gray;
+    background-image: url(../images/bg-intro-mobile.svg);
+    background-size: 95% 170%;
+    background-position: 900% 60%;
+    background-repeat: no-repeat;
+}
