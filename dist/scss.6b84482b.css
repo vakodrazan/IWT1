@@ -21,4 +21,47 @@ body {
   font-size: 18px;
 }
 
+.menu {
+  background-image: url("/icon-hamburger.cb455b0f.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 50% 50%;
+  color: transparent;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  height: 22px;
+  width: 22px;
+}
+
+.navigation {
+  height: 100%;
+  top: 10%;
+  left: 0;
+  position: fixed;
+  width: 250px;
+  margin-top: 60px;
+  transform: translateX(-250px);
+  transition: transform 250ms ease-in-out;
+  background-color: white;
+}
+
+input[type=checkbox]:checked ~ .navigation {
+  transform: translateX(25%);
+}
+
+input[type=checkbox]:checked ~ .menu {
+  transition: all 0.3s;
+  background-image: url("/icon-close.1add023a.svg");
+}
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+
 /*# sourceMappingURL=/scss.6b84482b.css.map */
