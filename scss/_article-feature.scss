@@ -1,0 +1,65 @@
+@import "./variables";
+
+.features {
+    padding-top: 40px;
+    text-align: center;
+    background-color: $light-grayish-blue;
+    padding-bottom: 40px;
+
+    @media (min-width: $desktop_breakpoint) {
+        text-align: left;
+        padding-bottom: 64px;
+    }
+
+    &__header {
+        padding-bottom: 42px;
+
+        @media (min-width: $desktop_breakpoint) {
+            max-width: 48%;
+        }
+
+        &__heading {
+            font-weight: 300;
+            font-size: 36px;
+            color: $dark-blue;
+            padding-bottom: 20px;
+        }
+        
+        &__description {
+            color: $grayish-blue;
+            line-height: 2;
+            font-weight: 300;
+        }
+    }
+
+    &__list {
+        @include flex-column-layout();
+        gap: 42px;
+
+        @media (min-width: $desktop_breakpoint) {
+            flex-direction: row;
+        }
+
+        &__item {
+            @include flex-column-layout();
+            gap: 20px;
+
+            @media (min-width: $desktop_breakpoint) {
+                align-items: flex-start;
+                max-width: 20%;
+            }
+
+            &__heading {
+                font-size: 24px;
+                font-weight: 300;
+                color: $dark-blue;
+            }
+
+            &__description {
+                font-weight: 300;
+                font-size: 14px;
+                color: $grayish-blue;
+            }
+        }
+    }
+}

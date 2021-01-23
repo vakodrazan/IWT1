@@ -237,6 +237,71 @@ input[type=checkbox] {
   display: none;
 }
 
+.features {
+  padding-top: 40px;
+  text-align: center;
+  background-color: #f3f4f6;
+  padding-bottom: 40px;
+}
+@media (min-width: 1440px) {
+  .features {
+    text-align: left;
+    padding-bottom: 64px;
+  }
+}
+.features__header {
+  padding-bottom: 42px;
+}
+@media (min-width: 1440px) {
+  .features__header {
+    max-width: 48%;
+  }
+}
+.features__header__heading {
+  font-weight: 300;
+  font-size: 36px;
+  color: #2d314d;
+  padding-bottom: 20px;
+}
+.features__header__description {
+  color: #9698a6;
+  line-height: 2;
+  font-weight: 300;
+}
+.features__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+}
+@media (min-width: 1440px) {
+  .features__list {
+    flex-direction: row;
+  }
+}
+.features__list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 1440px) {
+  .features__list__item {
+    align-items: flex-start;
+    max-width: 20%;
+  }
+}
+.features__list__item__heading {
+  font-size: 24px;
+  font-weight: 300;
+  color: #2d314d;
+}
+.features__list__item__description {
+  font-weight: 300;
+  font-size: 14px;
+  color: #9698a6;
+}
+
 .footer {
   background-color: #2d314d;
   color: white;
