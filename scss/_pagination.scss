@@ -35,9 +35,8 @@
     border-radius: 5px;
 
     &__list {
-        @include flex-row-layout();
-        flex-direction: column;
-        gap: 10px;
+        @include flex-column-layout();
+        gap: 26px;
 
         a {
             font-weight: 500;
@@ -46,6 +45,10 @@
             &:hover {
                 opacity: 0.6;
             }
+        }
+
+        @media (min-width: $desktop_breakpoint) {
+            flex-direction: row;
         }
     }
 
@@ -59,11 +62,6 @@
         transform: unset;
         transition: unset;
         background-color: unset;
-
-        &__list {
-            flex-direction: row;
-            gap: 25px;
-        }
     }
 }
 

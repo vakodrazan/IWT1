@@ -68,6 +68,10 @@ p {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   --padding-left: 14px;
   --padding-right: 15px;
@@ -191,11 +195,9 @@ p {
 }
 .navigation__list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  gap: 26px;
 }
 .navigation__list a {
   font-weight: 500;
@@ -203,6 +205,11 @@ p {
 }
 .navigation__list a:hover {
   opacity: 0.6;
+}
+@media (min-width: 1440px) {
+  .navigation__list {
+    flex-direction: row;
+  }
 }
 @media (min-width: 1440px) {
   .navigation {
@@ -215,10 +222,6 @@ p {
     transform: unset;
     transition: unset;
     background-color: unset;
-  }
-  .navigation__list {
-    flex-direction: row;
-    gap: 25px;
   }
 }
 
@@ -300,6 +303,68 @@ input[type=checkbox] {
   font-weight: 300;
   font-size: 14px;
   color: #9698a6;
+}
+
+.latest-news {
+  padding-top: 87px;
+  padding-bottom: 54px;
+  background-color: #fafafa;
+}
+.latest-news__header {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.latest-news__header__heading {
+  font-size: 43px;
+  font-weight: 300;
+}
+@media (min-width: 1440px) {
+  .latest-news__header {
+    text-align: left;
+  }
+}
+.latest-news__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+@media (min-width: 1440px) {
+  .latest-news__list {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.latest-news__article {
+  background-color: white;
+  border-radius: 8px;
+  padding-bottom: 30px;
+}
+.latest-news__article__image {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.latest-news__article__content {
+  padding-left: 14px;
+  padding-right: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  gap: 20px;
+  color: #9698a6;
+  font-weight: 300;
+}
+.latest-news__article__author {
+  font-size: 14px;
+}
+.latest-news__article__heading {
+  font-size: 20px;
+  color: #2d314d;
+}
+.latest-news__article:hover {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .footer {
