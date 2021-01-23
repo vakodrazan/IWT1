@@ -4,6 +4,7 @@ body {
     font-family: "Public Sans", Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin: 0;
+    line-height: 1.5;
 }
 
 h1,
@@ -41,4 +42,8 @@ ul {
 a {
     text-decoration: none;
     color: currentColor;
+}
+
+p {
+    margin: 0;
 }

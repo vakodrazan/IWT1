@@ -3,12 +3,55 @@
 .masthead {
     background-color: $very-light-gray;
     background-image: url(../images/image-mockups.png);
-    background-size: 100% 100%;
-    background-position-y: 20%;
+    background-size: 120vw;
+    background-position-x: -13vw;
+    background-position-y: -20vh;
     background-repeat: no-repeat;
-    margin-top: -2rem;
+    padding-top: 65vh;
+    text-align: center;
+    padding-bottom: 30px;
+
+    @media (min-width: $tablet_breakpoint) {
+        background-size: 50%;
+        background-position-x: center;
+        background-position-y: -25vh;
+    }
+
+    @media (min-width: $desktop_breakpoint) {
+        background-position-x: calc(50vw - 11px);
+        background-position-y: -50px;
+        background-size: contain;
+        padding-top: 50px;
+        text-align: left;
+    }
 
     .container {
-        padding-top: 200px;
+
+        @media (min-width: $desktop_breakpoint) {
+            padding: 0;
+        }
+
+        > * {
+            max-width: 442px;
+        }
     }
+
+    &__heading {
+        padding-bottom: 50px;
+        font-weight: 300;
+        font-size: 36px;
+        color: $dark-blue;
+
+        @media (min-width: $desktop_breakpoint) {
+            font-size: 56px;
+        }
+    }
+
+    &__description {
+        font-size: 16px;
+        color: $grayish-blue;
+        line-height: 2;
+        padding-bottom: 20px;
+    }
+
 }
