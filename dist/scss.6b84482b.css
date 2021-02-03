@@ -109,11 +109,10 @@ img {
 .masthead {
   background-color: #fafafa;
   background-image: url(/image-mockups.82980908.png);
-  background-size: 120vw;
-  background-position-x: -13vw;
-  background-position-y: -20vh;
+  background-size: 500px;
+  background-position: -80px -140px;
   background-repeat: no-repeat;
-  padding-top: 65vh;
+  padding-top: 500px;
   text-align: center;
   padding-bottom: 30px;
 }
@@ -126,10 +125,14 @@ img {
 }
 @media (min-width: 1440px) {
   .masthead {
-    background-position-x: calc(50vw - 11px);
-    background-position-y: -50px;
-    background-size: contain;
-    padding-top: 50px;
+    background-image: url(/bg-intro-desktop.d745898a.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 560px;
+    min-height: 560px;
+    padding: 0;
+    padding-top: 20px;
     text-align: left;
   }
 }
