@@ -108,9 +108,9 @@ img {
 
 .masthead {
   background-color: #fafafa;
-  background-image: url(/image-mockups.82980908.png);
-  background-size: 500px;
-  background-position: -80px -140px;
+  background-image: url(/image-mockups.82980908.png), url(/bg-intro-mobile.2783d013.svg);
+  background-size: 500px, 100%;
+  background-position: -80px -140px, 0 -77px;
   background-repeat: no-repeat;
   padding-top: 500px;
   text-align: center;
