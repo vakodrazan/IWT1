@@ -15,6 +15,13 @@
         flex-direction: column;
         gap: 10px;
 
+        a {
+
+            &:hover {
+                color: $lime-green;
+            }
+        }
+
         &__logo {
             padding-bottom: 10px;
         }
@@ -31,31 +38,12 @@
             gap: 10px;
 
             @media (min-width: $desktop_breakpoint) {
-                align-items: flex-start;;
+                align-items: flex-start;
             }
 
             &__icon {
-                background-repeat: no-repeat;
                 width: 200px;
                 height: 25px;
-                text-indent: -999px;
-                overflow: hidden;
-            }
-
-            &--facebook {
-                background-image: url("../images/icon-facebook.svg");
-            }
-            &--youtube {
-                background-image: url("../images/icon-youtube.svg");
-            }
-            &--twitter {
-                background-image: url("../images/icon-twitter.svg");
-            }
-            &--pinterest {
-                background-image: url("../images/icon-pinterest.svg");
-            }
-            &--instagram {
-                background-image: url("../images/icon-instagram.svg");
             }
         }
 
@@ -64,5 +52,10 @@
             width: 168px;
             padding-top: 10px;
         }
+    }
+
+    @media (min-width: $desktop_breakpoint) {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }

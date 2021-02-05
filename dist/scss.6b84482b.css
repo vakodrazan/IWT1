@@ -21,6 +21,7 @@ body {
   font-size: 18px;
   margin: 0;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 h1,
@@ -388,6 +389,9 @@ input[type=checkbox] {
   flex-direction: column;
   gap: 10px;
 }
+.footer__navigation a:hover {
+  color: #31d35c;
+}
 .footer__navigation__logo {
   padding-bottom: 10px;
 }
@@ -412,31 +416,19 @@ input[type=checkbox] {
   }
 }
 .footer__navigation__action__icon {
-  background-repeat: no-repeat;
   width: 200px;
   height: 25px;
-  text-indent: -999px;
-  overflow: hidden;
-}
-.footer__navigation__action--facebook {
-  background-image: url("/icon-facebook.db88fd38.svg");
-}
-.footer__navigation__action--youtube {
-  background-image: url("/icon-youtube.8e30d3e6.svg");
-}
-.footer__navigation__action--twitter {
-  background-image: url("/icon-twitter.9dcd00ee.svg");
-}
-.footer__navigation__action--pinterest {
-  background-image: url("/icon-pinterest.6b47e241.svg");
-}
-.footer__navigation__action--instagram {
-  background-image: url("/icon-instagram.55128b72.svg");
 }
 .footer__navigation--social-media {
   flex-direction: row;
   width: 168px;
   padding-top: 10px;
+}
+@media (min-width: 1440px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 /*# sourceMappingURL=/scss.6b84482b.css.map */
