@@ -17,11 +17,11 @@
     }
 
     @media (min-width: $desktop_breakpoint) {
-        background-image: url(../images/bg-intro-desktop.svg);
-        background-size: cover;
+        // background-image: url(../images/bg-intro-desktop.svg);
+        background-size: 60%, 64%;
         background-repeat: no-repeat;
-        background-position: right;
-        background-position-x: 560px;
+        background-position: 500px, right;
+        background-position-x: calc(50vw - 10px), 560px;
         min-height: 560px;
         padding: 0;
         padding-top: 20px;

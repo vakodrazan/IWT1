@@ -126,11 +126,10 @@ img {
 }
 @media (min-width: 1440px) {
   .masthead {
-    background-image: url(/bg-intro-desktop.d745898a.svg);
-    background-size: cover;
+    background-size: 60%, 64%;
     background-repeat: no-repeat;
-    background-position: right;
-    background-position-x: 560px;
+    background-position: 500px, right;
+    background-position-x: calc(50vw - 10px), 560px;
     min-height: 560px;
     padding: 0;
     padding-top: 20px;
